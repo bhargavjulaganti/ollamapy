@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poem Generator</title>
+</head>
+<body>
+    <h1>Poem Generator</h1>
+    <form method="POST">
+        <label for="input">Enter your prompt:</label>
+        <input type="text" id="input" name="input" required>
+        <button type="submit">Generate Poem</button>
+    </form>
+    {% if poem %}
+        <h2>Generated Poem:</h2>
+        <div>{{ poem }}</div>
+    {% endif %}
+</body>
+</html>
